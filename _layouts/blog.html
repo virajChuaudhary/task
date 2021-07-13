@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {% include head.html %}
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+{% include header.html%}
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{site.baseurl}}">Home</a></li>
+          <li>{{ page.title }}</li>
+        </ol>
+        <h2>{{ page.title }}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                
+    <div>
+     
+        <!-- <p>{{post.title}}</p> 
+        <p>{{post.url}}</p>
+        <a href="{{site.baseurl}}{{post.slug}}"> <p>{{post.url}}</p></a>
+        <hr>
+ -->
+
+
+        {% for post in site.posts %}
+        <div class="card mb-5" style="width: 100;">
+            <img class="card-img-top" src="{{post.img}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.desc}}</p>
+              <a href="{{post.url}}" class="btn btn-primary">learn more</a>
+          
+            </div>
+          </div>
+    </div>  
+    
+    {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+     <!-- <div>
+        <h2>  Blog  Posts </h2>
+
+        {% for post in site.categories.one %}
+        <p>{{post.title}}</p> 
+        <p>{{post.url}}</p>
+        <a href="{{site.baseurl}}{{post.slug}}"> <p>{{post.url}}</p></a>
+        <hr>
+
+        {% endfor %}
+    </div> -->
+
+
+    </section>
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+{% include footer.html%}
+
+  <!-- Vendor JS Files -->
+{% include script.html %}
+
+</body>
+
+</html>
+      

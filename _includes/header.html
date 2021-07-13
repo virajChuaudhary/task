@@ -1,19 +1,19 @@
 <header id="header" class="fixed-top header-inner-pages ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="{{site.baseurl}}">TASk</a></h1>
+      <h1 class="logo mr-auto"><a href="{{site.url}}">TASk</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{{site.baseurl}}">Home</a></li>
-          <li><a href="{{site.baseurl}}about">About</a></li>
-          <li><a href="{{site.baseurl}}services">Services</a></li>
+          <li class="{% if page.title == '' %}{{'active'}}{% endif %}"><a href="{{site.url}}">Home</a></li>
+          <li class="{% if page.title == 'About Us'%}{{'active'}}{% endif %}"><a href="{{site.url}}about">About</a></li>
+          <li class="{% if page.title == 'Service'%}{{'active'}}{% endif %}"> <a href="{{site.url}}services">Services</a></li>
           
-          <li><a href="{{site.baseurl}}portfolio">Portfolio</a></li>
-          <li><a href="{{site.baseurl}}team">Team</a></li>
-          <li><a href="{{site.baseurl}}faq">Faq</a></li>
+          <li class="{% if page.title == 'Portfolio'%}{{'active'}}{% endif %}"><a href="{{site.url}}portfolio">Portfolio</a></li>
+          <li class="{% if page.title == 'Team'%}{{'active'}}{% endif %}"><a href="{{site.url}}team">Team</a></li>
+          <li class="{% if page.title == 'FAQ'%}{{'active'}}{% endif %}"><a href="{{site.url}}faq">Faq</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -31,7 +31,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a href="{{site.baseurl}}contact">Contact</a></li>
+          <li class="{% if page.title == 'Contact'%}{{'active'}}{% endif %}"><a href="{{site.url}}contact">Contact</a></li>
+          <li class="{% if page.title == ' all blog'%}{{'active'}}{% endif %}"><a href="{{site.url}}blogs">Blog</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
