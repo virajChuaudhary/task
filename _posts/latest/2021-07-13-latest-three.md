@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "two"
-date:   2021-07-12 06:04:02 +0530
-categories: two
-permalink: "/:title/"
+title:  "latest three"
+date:   2021-07-12 09:36:02 +0530
+categories: latest
+permalink: "/:categories/:title/"
 desc: "You’ll find  `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in"
 img: https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg
 ---

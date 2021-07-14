@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "one"
-date:   2021-07-12 06:04:02 +0530
-categories: one
-permalink: "/:title/"
-desc: "You’ll find  `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in"
-img: https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg
+title:  "news two"
+date:   2021-07-14 10:04:02 +0530
+categories: news
+permalink: "/:categories/:title/"
+desc:  "You’ll find this post in your to see your changes. You can rebuild the site in"
+img: https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,0 +1,4 @@
+---
+layout: catpost
+categories: news
+---
