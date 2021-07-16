@@ -15,6 +15,8 @@
         transition: all ease-in-out 0.4s;
         background: #fff;
         position: fixed;
+    } .sidebar-box .change{
+     display: none;
     }
      .sidebar-box .title{
         margin-top: -20px;
@@ -28,6 +30,18 @@
        color:#ffffff;
        border-radius: 50%;
        font-size: 12px;
-    }
+    } 
+  
 
 </style>
+<!-- <script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if(scroll >= 500) {
+        $(".sidebar-box").addClass(".change");
+    } else {
+        $(".sidebar-box").removeClass(".change");
+    }
+});
+</script> -->
